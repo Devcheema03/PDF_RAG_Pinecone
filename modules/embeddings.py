@@ -1,16 +1,20 @@
 from sentence_transformers import SentenceTransformer
 
-from pathlib import Path
-import sys
 
-sys.path.append(str(Path(__file__).resolve().parent.parent))
+# -----------------------------
+# Embedding Model
+# -----------------------------
 
-from config import EMBEDDING_MODEL
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 
 # Load the embedding model
 model = SentenceTransformer(EMBEDDING_MODEL)
 
+
+# -----------------------------
+# Generate Embeddings
+# -----------------------------
 
 def generate_embeddings(texts):
     """
