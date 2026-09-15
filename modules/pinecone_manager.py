@@ -1,5 +1,5 @@
+import os
 from pinecone import Pinecone, ServerlessSpec
-from config import PINECONE_API_KEY
 
 
 # -----------------------------
@@ -13,6 +13,8 @@ DIMENSION = 384
 # -----------------------------
 # Connect to Pinecone
 # -----------------------------
+
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
