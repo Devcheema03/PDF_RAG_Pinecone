@@ -9,3 +9,4 @@ sentence-transformers
 pinecone
 python-dotenv
 requests
+groq
