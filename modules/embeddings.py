@@ -1,5 +1,10 @@
 from sentence_transformers import SentenceTransformer
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from config import EMBEDDING_MODEL
 
 
